@@ -40,8 +40,9 @@ header {
 .head_item {
     display: flex;
     align-items: flex-end;
+    list-style: none;
 
-    div {
+    li {
         margin: 10px 30px;
         text-align: center;
         h6 {
@@ -100,6 +101,7 @@ header {
     background-color: gainsboro;
     width: 100vw;
     text-align: center;
+    list-style: none;
     h6 {
         margin: 50px 0;
     }
@@ -188,8 +190,8 @@ footer {
 
     .nav_rwd {
         display: block;
-        height: 35px;
-        width: 35px;
+        height: 40px;
+        width: 40px;
 
         img {
             max-width: 100%;
@@ -197,6 +199,7 @@ footer {
         }
     }
 
+    
     // footer_rwd
     .footer_logo img {
         max-width: 100%;

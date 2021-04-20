@@ -53,18 +53,19 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  list-style: none;
 }
 
-.head_item div {
+.head_item li {
   margin: 10px 30px;
   text-align: center;
 }
 
-.head_item div h6 {
+.head_item li h6 {
   margin: 0;
 }
 
-.head_item div p {
+.head_item li p {
   margin: 0;
   font-size: 11pt;
 }
@@ -117,6 +118,7 @@ header {
   background-color: gainsboro;
   width: 100vw;
   text-align: center;
+  list-style: none;
 }
 
 #nav_none h6 {
@@ -212,8 +214,8 @@ footer {
   }
   .nav_rwd {
     display: block;
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
   }
   .nav_rwd img {
     max-width: 100%;
