@@ -3,7 +3,7 @@
 
 body {
     font-family: "Noto Sans TC", sans-serif;
-    width: 100vw;
+    // width: 100vw;
 }
 
 a {
@@ -13,24 +13,27 @@ a {
 
 /* header */
 header {
-    // width: 100vw;
+    width: 100vw;
     box-shadow: 0px 1px 5px grey;
 }
 .header_group {
     display: flex;
     max-width: 1400px;
     margin: auto ;
-    padding:20px 0 10px 0;
+    padding:15px 0 ;
+    
     
    
 
     justify-content: space-between;
 }
 .logo {
-    height: 80px;
+    height: 70px;
     width: 300px;
-    justify-items: center;
+    // justify-items: center;
     margin: 0 0 0 60px;
+    // text-align:center;
+    line-height:70px;
 
     img {
         max-width: 100%;
@@ -39,14 +42,14 @@ header {
 }
 .header_group_right {
     display: flex;
-   
+    justify-content: space-around;
     // margin: 0 20px 0 0;
 }
 .head_item {
     display: flex;
     // align-items: flex-end;
     list-style: none;
-    margin: 10px 30px 0 0  ;
+    margin: 0px 30px 0 0  ;
     padding: 0;
 
     li {
@@ -86,26 +89,23 @@ header {
 }
 
 .language {
-    position:absolute;
-    top: 8px;
-    min-width: 100px;
+   text-align: end;
+   padding: 0 10px;
+   p{
+       margin: 0;
+   }
+    
+    // position:relative;
+    // top: -30px;
+    // right: 100px;
+
+    // min-width: 100px;
     // margin: 0px;
 }
 
-
+main{width: 100vw;}
 
 // 漢堡
-#burger {
-    display: none;
-}
-
-.nav_mune {
-    display: none;
- 
-   
-
-}
-
 label {
     width: 35px;
     height: 35px;
@@ -116,6 +116,18 @@ label {
 
     }
 }
+.nav_mune {
+    display: none;
+ 
+   
+
+}
+#burger {
+    display: none;
+}
+
+
+
 
 /* header_hover */
 .head_item :hover {
@@ -134,7 +146,7 @@ label {
 /* footer */
 footer {
     box-shadow: 0px -1px 5px grey;
-    // width: 100vw;
+    width: 100vw;
 }
 
 .footer_group {
@@ -200,12 +212,18 @@ footer {
 @media (max-width: 1024px), print {
     // header_rwd
     .header_group{
-        padding:15px 0 5px 0;
+        padding:10px 0 15px 0 ;
     }
     .language {
-        // right: -7px;
-        top: 10px;
+        right: 7px;
+        top: -25px;
+        
+       
+        // top: 10px;
         // margin: auto ;
+    }
+    .logo{
+        line-height:30px;
     }
     .head_item {
         display: none;
@@ -216,7 +234,8 @@ footer {
         label{ 
             // margin: auto;
             position: relative;
-            top:30px;
+            top:10px; 
+             display: block;
         
         }
        
@@ -248,9 +267,7 @@ footer {
 
 
 
-    label {
-        display: block;
-    }
+  
 
     #burger:checked + .mnue .nav_mune {
         display: block;
@@ -277,15 +294,16 @@ footer {
         margin: 0 0 0 15px;
     }
     .language {
-        right: 45px;
-        top: 28px;
+        position: relative;
+        right: 70px;
+        top: 18px;
        
     }
     
     .header_group_right{
         label{ 
            
-            top:15px;
+            top:-10px;
         
         }
        
