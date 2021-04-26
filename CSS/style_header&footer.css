@@ -1,6 +1,7 @@
 /* Share */
 body {
   font-family: "Noto Sans TC", sans-serif;
+  width: 100vw;
 }
 
 a {
@@ -10,7 +11,6 @@ a {
 
 /* header */
 header {
-  width: 100vw;
   -webkit-box-shadow: 0px 1px 5px grey;
           box-shadow: 0px 1px 5px grey;
 }
@@ -43,7 +43,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 20px 0 0;
 }
 
 .head_item {
@@ -127,7 +126,6 @@ label img {
 footer {
   -webkit-box-shadow: 0px -1px 5px grey;
           box-shadow: 0px -1px 5px grey;
-  width: 100vw;
 }
 
 .footer_group {
