@@ -10,9 +10,10 @@ a {
 
 /* header */
 header {
-  width: 100vw;
+  width: 100%;
   -webkit-box-shadow: 0px 1px 5px grey;
           box-shadow: 0px 1px 5px grey;
+  background-color: white;
 }
 
 .header_group {
@@ -39,6 +40,26 @@ header {
   max-height: 100%;
 }
 
+.burger_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 20px;
+}
+
+.language {
+  text-align: end;
+  padding: 0 10px;
+}
+
+.language p {
+  margin: 0;
+}
+
 .header_group_right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,7 +68,7 @@ header {
       justify-content: space-around;
 }
 
-.head_item {
+.header_group_right ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,16 +77,16 @@ header {
   padding: 0;
 }
 
-.head_item li {
+.header_group_right ul li {
   margin: 10px 20px;
   text-align: center;
 }
 
-.head_item li h6 {
+.header_group_right ul li h6 {
   margin: 0;
 }
 
-.head_item li p {
+.header_group_right ul li p {
   margin: 0;
   font-size: 11pt;
 }
@@ -87,19 +108,6 @@ header {
   margin: 0 10px 0 0;
 }
 
-.language {
-  text-align: end;
-  padding: 0 10px;
-}
-
-.language p {
-  margin: 0;
-}
-
-main {
-  width: 100vw;
-}
-
 label {
   width: 35px;
   height: 35px;
@@ -111,7 +119,7 @@ label img {
   height: 100%;
 }
 
-.nav_mune {
+.mnue ul {
   display: none;
 }
 
@@ -120,22 +128,17 @@ label img {
 }
 
 /* header_hover */
-.head_item :hover {
+.header_group_right ul :hover {
   color: #006bb8;
   -webkit-box-shadow: 1 1 0;
           box-shadow: 1 1 0;
 }
 
 /* main */
-#nav_none {
-  display: none;
-}
-
 /* footer */
 footer {
   -webkit-box-shadow: 0px -1px 5px grey;
           box-shadow: 0px -1px 5px grey;
-  width: 100vw;
 }
 
 .footer_group {
@@ -161,9 +164,10 @@ footer {
   margin: 0 0 0 10px;
 }
 
-.footer_item {
+.footer_item ul {
   text-align: center;
   font-size: 11pt;
+  list-style: none;
 }
 
 .footer_community {
@@ -204,17 +208,20 @@ footer {
 
 /* footer_rwd  */
 @media (max-width: 1024px), print {
+  header {
+    position: absolute;
+    z-index: 1;
+  }
   .header_group {
     padding: 10px 0 15px 0;
-  }
-  .language {
-    right: 7px;
-    top: -25px;
   }
   .logo {
     line-height: 30px;
   }
-  .head_item {
+  .language {
+    top: -25px;
+  }
+  .header_group_right ul {
     display: none;
   }
   .header_group_right label {
@@ -225,22 +232,28 @@ footer {
   .community_icon {
     display: none;
   }
-  .nav_mune {
+  .mnue ul {
     background-color: gainsboro;
     text-align: center;
     list-style: none;
-    padding: 20px 0;
-  }
-  .nav_mune h6 {
-    padding: 20px 0;
-  }
-  #burger:checked + .mnue .nav_mune {
+    margin: 0;
+    padding: 0;
     display: block;
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
-  .footer_logo img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 0 0 10px;
+  .mnue ul h6 {
+    margin: 0;
+    border-bottom: solid 2px #bdbdbd;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  #burger:checked + .mnue ul {
+    display: block;
+    top: 85px;
   }
 }
 
