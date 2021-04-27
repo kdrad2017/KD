@@ -132,6 +132,8 @@ label img {
   color: #006bb8;
   -webkit-box-shadow: 1 1 0;
           box-shadow: 1 1 0;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 /* main */
@@ -247,13 +249,12 @@ footer {
   }
   .mnue ul h6 {
     margin: 0;
-    border-bottom: solid 2px #bdbdbd;
     margin: 0 auto;
     padding: 30px 0;
   }
   #burger:checked + .mnue ul {
     display: block;
-    top: 85px;
+    top: 95px;
   }
 }
 
