@@ -103,9 +103,12 @@ header {
 }
 
 .community_icon {
+  margin: 0 10px 0 0;
+}
+
+.community_icon img {
   height: 35px;
   width: 35px;
-  margin: 0 10px 0 0;
 }
 
 label {
@@ -132,8 +135,8 @@ label img {
   color: #006bb8;
   -webkit-box-shadow: 1 1 0;
           box-shadow: 1 1 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /* main */
@@ -155,14 +158,9 @@ footer {
           justify-content: space-between;
 }
 
-.footer_logo {
+.footer_logo img {
   height: 130px;
   width: 200px;
-}
-
-.footer_logo img {
-  max-width: 100%;
-  max-height: 100%;
   margin: 0 0 0 10px;
 }
 
@@ -185,14 +183,9 @@ footer {
   padding: 0 5px;
 }
 
-.footer_community_icon div {
+.footer_community_icon div img {
   height: 35px;
   width: 35px;
-}
-
-.footer_community_icon div img {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .footer_end {
