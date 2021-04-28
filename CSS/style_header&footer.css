@@ -259,9 +259,6 @@ footer {
 }
 
 @media (max-width: 768px), print {
-  .header_group {
-    padding: 10px 0;
-  }
   .logo {
     height: 65px;
     width: 80px;
@@ -271,6 +268,9 @@ footer {
     position: relative;
     right: 50px;
     top: 18px;
+  }
+  .header_group {
+    padding: 15px 0;
   }
   .header_group_right label {
     top: -10px;

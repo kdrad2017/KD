@@ -263,9 +263,7 @@ footer {
 }
 
 @media (max-width: 768px), print {
-    .header_group {
-        padding: 10px 0;
-    }
+   
     .logo {
         height: 65px;
         width: 80px;
@@ -277,12 +275,19 @@ footer {
         top: 18px;
     }
 
+    .header_group {
+        padding:15px 0;
+    }
+
+
     .header_group_right {
         label {
             top: -10px;
             right: -18px;
         }
     }
+
+    
 
     .footer_group {
         display: flex;
@@ -309,15 +314,4 @@ footer {
 
     // }
 }
-// .header_group {
-//     display: flex;
-//     max-width: 1400px;
-//     margin: auto;
-//     padding: 10px 0;
 
-//     justify-content: space-between;
-// }
-// .header_community {
-//     align-items: center;
-//     display: flex;
-// }
