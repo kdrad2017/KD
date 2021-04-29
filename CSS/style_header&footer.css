@@ -236,7 +236,7 @@ footer {
     display: block;
     position: absolute;
     width: 100%;
-    top: -100%;
+    top: -400px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -246,7 +246,6 @@ footer {
     padding: 30px 0;
   }
   #burger:checked + .mnue ul {
-    display: block;
     top: 95px;
   }
   main {
@@ -254,7 +253,7 @@ footer {
   }
 }
 
-@media (max-width: 768px), print {
+@media (max-width: 720px), print {
   .logo {
     height: 65px;
     width: 80px;
