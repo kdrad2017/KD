@@ -249,6 +249,9 @@ footer {
     display: block;
     top: 95px;
   }
+  main {
+    padding-top: 95px;
+  }
 }
 
 @media (max-width: 768px), print {
