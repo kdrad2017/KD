@@ -87,14 +87,14 @@ header {
 }
 
 .header_community {
+    display:flex;
+    // justify-content: space-between;
     align-items: center;
-    display: flex;
-    justify-content: space-around;
     div {
-        margin: 0 10px 0 0;
+        margin: 0 15px 0 0;
         img {
-            height: 35px;
-            width: 35px;
+            height: 38px;
+            width: 38px;
         }
     }
 
@@ -176,12 +176,12 @@ footer {
     //     width: 35px;
     // margin: 0 10px 0 0;
     display: flex;
-    justify-content: space-around;
-    padding: 0 5px;
+    justify-content: space-between;
+    padding: 0 10px;
 
     div {
-        height: 35px;
-        width: 35px;
+        height: 38px;
+        width: 38px;
 
         img {
             width: 100%;
