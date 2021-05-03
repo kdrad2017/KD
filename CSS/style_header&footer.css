@@ -294,19 +294,24 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 30px 0;
   }
-  .footer_group div {
-    margin: 15px auto;
+  .footer_group .footer_logo {
+    margin-bottom: 30px;
   }
-  .footer_group div img {
+  .footer_group .footer_logo img {
     margin: 0;
   }
-  .footer_group div div {
-    margin: 0px auto;
+  .footer_group ul {
+    margin-bottom: 30px;
+    text-align: center;
   }
-  .footer_group div P {
-    margin: 10px auto;
+  .footer_group .footer_community {
+    margin: 0;
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=style_header&footer.css.map */
