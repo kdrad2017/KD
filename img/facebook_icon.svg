@@ -1,6 +1,34 @@
-<svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <g>
-    <circle cx="256" cy="256" r="256" style="fill: #3a5691"/>
-    <path d="M331.1,181.7h36.3V127.5H316c-29.6,0-68.1,19-68.1,74.2v43H198.8v56.1h49.1v146h58.6v-146h48.8l8.1-56.1H306.5V209C306.5,190.6,315.5,181.7,331.1,181.7Z" transform="translate(-29.5 -30.5)" style="fill: #fff"/>
+<svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #3a5ba2;
+      }
+
+      .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <path class="cls-3" d="M256.23,512C396.81,512,512,396.81,512,256.23,512,115.18,396.81,0,256.23,0,115.18,0,0,115.18,0,256.23,0,396.81,115.18,512,256.23,512Z"/>
+  </g>
+  <g class="cls-2">
+    <path class="cls-4" d="M224,160.09A63.88,63.88,0,0,1,288,96.14H336v64h-32.2A16.07,16.07,0,0,0,288,176v32.19H336v63.94H288V416.31H224V272.09H176V208.15H224Z"/>
   </g>
 </svg>
