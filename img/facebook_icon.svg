@@ -1,34 +1,12 @@
-<svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-      }
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
 
-      .cls-2 {
-        clip-path: url(#clip-path);
-      }
-
-      .cls-3 {
-        fill: #3a5ba2;
-      }
-
-      .cls-3, .cls-4 {
-        fill-rule: evenodd;
-      }
-
-      .cls-4 {
-        fill: #fff;
-      }
-    </style>
-    <clipPath id="clip-path">
-      <rect class="cls-1" width="512" height="512"/>
-    </clipPath>
-  </defs>
-  <g class="cls-2">
-    <path class="cls-3" d="M256.23,512C396.81,512,512,396.81,512,256.23,512,115.18,396.81,0,256.23,0,115.18,0,0,115.18,0,256.23,0,396.81,115.18,512,256.23,512Z"/>
-  </g>
-  <g class="cls-2">
-    <path class="cls-4" d="M224,160.09A63.88,63.88,0,0,1,288,96.14H336v64h-32.2A16.07,16.07,0,0,0,288,176v32.19H336v63.94H288V416.31H224V272.09H176V208.15H224Z"/>
-  </g>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle id="svg_2" r="256" fill="#3B5998" cy="256" cx="256"/>
+  <path id="svg_3" fill="#FFFFFF" d="m301.6,151.2c15.6,0 36.3,0 36.3,0l0,-54.2c0,0 -21.8,0 -51.4,0c-29.6,0 -68.1,19 -68.1,74.2c0,10.3 0,25.4 0,43l-49.1,0l0,56.1l49.1,0c0,69.9 0,146 0,146l21.8,0l17.3,0l19.5,0c0,0 0,-78.8 0,-146l48.8,0l8.1,-56.1l-56.9,0c0,-18.4 0,-31.8 0,-35.7c0,-18.4 9,-27.3 24.6,-27.3z"/>
+ </g>
 </svg>
