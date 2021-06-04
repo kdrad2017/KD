@@ -40,11 +40,53 @@
             margin: 0;
             padding: 0;
             list-style: none;
+
         }
+
+        /* 暫時 */
+
+
+        .col-md-3 {
+            /* padding: 0 0 40px 40px; */
+            /* margin: 0 0 50px 50px; */
+            padding: 30px;
+          
+         
+        }
+
+        .col-md-3 div{
+            width: 250px;
+            height: 250px;
+            overflow:hidden;
+             border: rgb(238, 234, 234) 1px solid;  margin: auto;
+
+        }
+
+        @media (max-width: 1440px),
+        print {
+            .col-md-3{
+                width: 33.3%;
+            }
+        }
+
+        @media (max-width: 1000px),
+        print {
+            .col-md-3{
+                width: 50%;
+            }
+        }
+        @media (max-width: 760px),
+        print {
+            .col-md-3{
+                width: 100%;
+            }
+        }
+
+        /* 暫時結束 */
     </style>
 
     <!-- 瀏覽人數 -->
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
 
 
 </head>
@@ -106,12 +148,12 @@
 
                     <div class="header_community ">
                         <a href="https://www.facebook.com/">
-                            <div >
+                            <div>
                                 <img src="./img/facebook_icon.svg " alt="facebook_img">
                             </div>
                         </a>
                         <a href="https://www.instagram.com/">
-                            <div >
+                            <div>
                                 <img src="./img/instagram_icon.svg" alt="instagram_img">
                             </div>
                         </a>
@@ -165,8 +207,8 @@
             </div>
         </div>
 
-
-
+        <!-- 內容 -->
+        <!-- 
         <div style="height: 100vh;display: flex;align-items:center;justify-content:center ">
             <div>
 
@@ -175,14 +217,167 @@
                 <h4>網站施工中...</h4>
 
             </div>
+                </div> -->
+
+        <!-- 暫時 -->
+
+        <div class="container" style="margin:20px auto;width:80%;padding: 0;">
+            <div class="row" style="margin: 50px 0 20px 0;">
+                <h4>產品</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-3" >
+                    <div >
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_01.jpg ">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div >
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_02.jpg ">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div >
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_03.jpg ">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div>
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_04.jpg ">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div>
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_05.jpg ">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div>
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_06.jpg ">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div >
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_07.jpg ">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div >
+                        <img style="object-fit:cover;height: 100%;transform:translate(-35px) scale(0.9)" src="./照片/p_08.jpg ">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div >
+                        <img style="object-fit:cover;height: 100%;transform:translate(-10px)" src="./照片/p_09.jpg ">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div >
+                        <img style="object-fit:cover;height: 100%;transform:translate(-65px) scale(0.8)" src="./照片/p_10.jpg ">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <img style="object-fit:cover;height: 100%;transform:translate(-65px) scale(0.7)" src="./照片/p_11.jpg ">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <img style="object-fit:cover;height: 100%;transform:translate(-15px) " src="./照片/p_12.jpg ">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <img style="object-fit:cover;height: 100%;transform:translate(-15px) " src="./照片/p_13.jpg ">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <img style="object-fit:cover;height: 100%;transform:translate(-20px) scale(0.7) " src="./照片/p_14.jpg ">
+                    </div>
+                </div>
 
 
 
+                
+
+
+
+
+            </div>
+        </div>
+
+
+        <!-- <div  style="width: 73%;margin: 50px auto 0px auto;">
+            <h4  >產品</h4>
+        </div>
+       
+        <div class="row justify-content-center" style="margin:20px auto;width:80%;">
+
+            <div class="col col-sm6  " style="padding: 20px;">
+                <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                    <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_01.jpg ">
+                </div>
+
+            </div>
+            <div class="col col-sm6 " style="padding: 20px;">
+                <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                    <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_02.jpg ">
+                </div>
+
+            </div>
+            
+                <div class="col col-sm6 " style="padding: 20px;">
+                    <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_03.jpg ">
+                    </div>
+    
+                </div>
+                <div class="col col-sm6 " style="padding: 20px;">
+                    <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_04.jpg ">
+                    </div>
+    
+                </div>
+                <div class="col col-sm6 " style="padding: 20px;">
+                    <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_05.jpg ">
+                    </div>
+    
+                </div>
+                <div class="col col-sm6 " style="padding: 20px;">
+                    <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_06.jpg ">
+                    </div>
+    
+                </div>
+                <div class="col col-sm6 " style="padding: 20px;">
+                    <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_07.jpg ">
+                    </div>
+    
+                </div> -->
+        <!-- transform:translate(-65px) ;transform:translate(-85px) scale(0.8)-->
+
+
+        <!-- <div class="col" style="background-color: gainsboro;height: 200px;"></div>
+            <div class="col" style="background-color: gainsboro;height: 200px;"></div>
+             -->
 
 
         </div>
-
+        <!-- 暫時結束 -->
     </main>
+    <!-- 內容結束 -->
 
     <footer>
         <div class="footer_group">
@@ -255,8 +450,8 @@
         </div>
         <div class="footer_end">
             <p>© 2020 臺灣愷迪研發科技股份有限公司版權所有。 | Designed by KD.<br>
-                </p>
-                <div>
+            </p>
+            <!-- <div>
                     <span id="busuanzi_container_site_pv">
                         本站總訪問量<span id="busuanzi_value_site_pv"></span>次
                     </span>
@@ -265,7 +460,7 @@
                     <span id="busuanzi_container_site_uv">
                       本站訪客數<span id="busuanzi_value_site_uv"></span>人次
                     </span>
-                </div>
+                </div> -->
         </div>
 
     </footer>
