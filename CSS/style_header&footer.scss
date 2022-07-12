@@ -4,8 +4,11 @@ body {
     font-family: "Noto Sans TC", sans-serif;
     // width: 100vw;
     // width: 100%;
-    background-color: rgb(252, 252, 252) ;
-   
+    background-color: rgb(252, 252, 252);
+    // 78
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -28,7 +31,6 @@ header {
     width: 100%;
 
     box-shadow: 0px 1px 5px grey;
-    
 }
 .header_group {
     display: flex;
@@ -47,13 +49,12 @@ header {
     line-height: 70px;
     // 更改LOGO
     margin: 4px 0 0 63px;
-   width: 400px;
+    width: 400px;
     // 更改結束
 
     img {
         max-width: 100%;
         max-height: 100%;
-       
     }
 }
 .burger_group {
@@ -100,7 +101,7 @@ header {
 }
 
 .header_community {
-    display:flex;
+    display: flex;
     // justify-content: space-between;
     align-items: center;
     div {
@@ -128,6 +129,11 @@ label {
         height: 100%;
     }
 }
+
+main {
+    flex-grow: 1;
+}
+
 .mnue ul {
     display: none;
 }
@@ -158,15 +164,12 @@ footer {
     padding: 30px 0;
     justify-content: space-between;
 
-    ul{
+    ul {
         text-align: center;
         font-size: 11pt;
         list-style: none;
-        
-
     }
 }
-
 
 .footer_logo {
     // height: 130px;
@@ -270,7 +273,6 @@ footer {
 
     // 漢堡
     .mnue {
-        
         ul {
             background-color: gainsboro;
 
@@ -338,7 +340,7 @@ footer {
         align-items: center;
 
         // padding: 30px 0;
-       
+
         // div {
         //     margin: 15px auto;
         //     img {
@@ -351,14 +353,13 @@ footer {
         //         margin: 10px auto;
         //     }
         // }
-        .footer_logo  {
+        .footer_logo {
             margin-bottom: 55px;
-            img{
+            img {
                 margin: 0;
             }
-            
         }
-        ul{
+        ul {
             margin-bottom: 30px;
             text-align: center;
         }

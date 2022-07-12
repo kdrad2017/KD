@@ -40,7 +40,51 @@
             margin: 0;
             padding: 0;
             list-style: none;
+
         }
+
+        /* 暫時 */
+
+
+        .col-md-3 {
+            /* padding: 0 0 40px 40px; */
+            /* margin: 0 0 50px 50px; */
+            padding: 30px;
+
+
+        }
+
+        .col-md-3 div {
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            border: rgb(238, 234, 234) 1px solid;
+            margin: auto;
+
+        }
+
+        @media (max-width: 1440px),
+        print {
+            .col-md-3 {
+                width: 33.3%;
+            }
+        }
+
+        @media (max-width: 1000px),
+        print {
+            .col-md-3 {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 760px),
+        print {
+            .col-md-3 {
+                width: 100%;
+            }
+        }
+
+        /* 暫時結束 */
     </style>
 
     <!-- 瀏覽人數 -->
@@ -49,7 +93,7 @@
 
 </head>
 
-<body>
+<body >
 
     <header>
         <!-- <div style="position: absolute;right: 50px; ;height: 50px;"><p>中文/English</p></div> -->
@@ -60,7 +104,8 @@
 
                         <source srcset="https://www.kaidi-tech.com/img/2022LOGO-3.svg" media="(max-width: 1050px)">
 
-                        <img src="img/logo_top.svg" alt="kaidi_logo">
+                        <img src="img/logo_top.svg" alt="kaidi_logo" style="width:auto;">
+
                     </picture>
                     <!-- <img src="./img/資產 4.svg" alt="kaidi_logo"> -->
                 </a>
@@ -73,9 +118,6 @@
                         <a href="#">English</a>
 
                     </p>
-                    
-                    
-                    
                 </div>
 
                 <div class="header_group_right">
@@ -113,7 +155,7 @@
 
                     <div class="header_community ">
                         <a href="https://www.facebook.com/%E6%84%B7%E8%BF%AA%E7%A0%94%E7%99%BC%E7%A7%91%E6%8A%80-103166575533394/">
-                            <div >
+                            <div>
                                 <img src="./img/facebook_icon.svg " alt="facebook_img">
                             </div>
                         </a>
@@ -145,90 +187,136 @@
 
     </header>
 
-    <!-- <div class="header_div" style="height: 115px;background-color: wheat;">     
-    </div> -->
-    <div style=>
-        <input type="checkbox" id="burger">
-        <div class="mnue">
-
-            <ul>
-                <li><a href="./index.html">
-                        <h6>首頁</h6>
-                    </a>
-                <!-- </li>
-                <li><a href="./about.html">
-                        <h6>關於愷迪</h6>
-                    </a>
-
-                </li> -->
-                <li><a href="./mainProducts.html">
-                    <h6>研發產品</h6>
-
-                </a>
-
-            </li>
-            <li><a href="./product.html">
-                    <h6>一般產品</h6>
-
-                </a>
-
-            </li>
-                <li><a href="./contact.html">
-                        <h6>聯絡我們</h6>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <main>
+        <div>
+            <input type="checkbox" id="burger">
+            <div class="mnue">
 
+                <ul class="nav_mune">
+                    <li><a href="./index.html">
+                            <h6>首頁</h6>
+                        </a>
+                    </li>
+                    <!-- <li><a href="./about.html">
+                            <h6>關於愷迪</h6>
+                        </a>
 
+                    </li> -->
+                    <li><a href="./mainProducts.html">
+                        <h6>研發產品</h6>
 
-        <div >
+                    </a>
 
-            <div style="display: flex;align-items:center;justify-content:center ">
-                <div style=" text-align: center;width: 1000px;">
-                    <div style="margin: 30px 0; position: relative;padding-bottom: 60%;overflow: hidden;width: 100%;">
-                        <!-- z-index: -1; -->
-                        <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14454.542733148292!2d121.4941663!3d25.0803343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa77983cf5b8aba2e!2z5oS36L-q56CU55m856eR5oqA5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1620626675946!5m2!1szh-TW!2stw"
-                              allowfullscreen=""
-                            loading="lazy"style="border:0; position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%; "></iframe>
-                    </div>
+                </li>
+                <li><a href="./product.html">
+                        <h6>一般產品</h6>
 
-                    <h3>愷迪研發科技有限公司</h3>
-                    <h4>
-                        Kai Di R&D Technology Co., Ltd
-                    </h4><br>
-                    <p>地址:新北市三重區仁愛街315巷72號(1樓)<br>
-                        電話:02-22860850<br>
-                        E-mail:kdrad2017@hotmail.com<br>
-                        統編:50888679<br>
-                        公車:搭乘橘18經福隆路「仁愛街」站下車、F302「愛街315巷口」站下車。
+                    </a>
 
+                </li>
+                    <li><a href="./contact.html">
+                            <h6>聯絡我們</h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+        <!-- 內容 -->
+        <!-- 
+        <div style="height: 100vh;display: flex;align-items:center;justify-content:center ">
+            <div>
 
+                <img width="100px" height="100px" style="margin: 0 0 20px 0;" src="./img/construction.svg"><br>
 
-                    </p>
-                </div>
-
-
-
+                <h4>網站施工中...</h4>
 
             </div>
+                </div> -->
 
+        <!-- 暫時 -->
 
-
-
+        <div class="container" style="margin:20px auto;width:80%;padding: 0;word-wrap:break-word;">
+            <!-- <div class="row" style="margin: 50px 0 20px 0;">
+                <h4>研發產品</h4>
+            </div> -->
+            <div class="row" style="width:80%;margin: auto;">
+                <H4 style="margin: 40px 0;">高血壓是中老年人的專利，年輕人不需要量血壓？</H4>
+               <p>
+                1.依據國民健康署102-104年國民營養健康狀況變遷調查顯示，18歲以上民眾有462萬人罹患高血壓，其中18-39歲的國人當中有超過36萬人罹患高血壓，顯見高血壓並非一般人所認知的「中老年病」，各年齡層都受到高血壓之威脅。
+                            <br>2.高血壓是心臟病、中風、腎臟病、眼疾等疾病之重大危險因子，全球約有18%人口(9百40萬)死亡的主要原因與高血壓有關。高血壓通常沒有症狀，許多人雖然知道自己有高血壓，卻未採取任何控制血壓的措施，任由其造成人體器官的傷害，因此又有「沉默殺手」之稱。國民健康署也建議所有民眾應了解自己的血壓值，並注意：
+                            <br>(1)18歲以上民眾每年至少要量1次血壓，如果血壓低於120/80 mm/Hg，可維持每年至少量1次血壓。
+                            <br>(2)如果您的血壓範圍在120/80-140/90
+                            mm/Hg之間，為血壓前期，表示您有可能發展成為高血壓，建議應立即改善生活型態如：戒菸酒、減重、規律運動、養成低鹽、少油、多蔬果之健康飲食型態與習慣，並尋求醫療人員評估後續血壓變化情形。
+                            <br>(3)若您的血壓超過140/90 mm/Hg，建議您應與醫師討論是否需要進一步治療，以避免後續心臟病或中風發生。
+                            <br>資料來源：http://www.worldhypertensionleague.org/
+               </p>
+            </div>
 
         </div>
 
+
+        <!-- <div  style="width: 73%;margin: 50px auto 0px auto;">
+            <h4  >產品</h4>
+        </div>
+       
+        <div class="row justify-content-center" style="margin:20px auto;width:80%;">
+
+            <div class="col col-sm6  " style="padding: 20px;">
+                <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                    <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_01.jpg ">
+                </div>
+
+            </div>
+            <div class="col col-sm6 " style="padding: 20px;">
+                <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                    <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_02.jpg ">
+                </div>
+
+            </div>
+            
+                <div class="col col-sm6 " style="padding: 20px;">
+                    <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_03.jpg ">
+                    </div>
+    
+                </div>
+                <div class="col col-sm6 " style="padding: 20px;">
+                    <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_04.jpg ">
+                    </div>
+    
+                </div>
+                <div class="col col-sm6 " style="padding: 20px;">
+                    <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_05.jpg ">
+                    </div>
+    
+                </div>
+                <div class="col col-sm6 " style="padding: 20px;">
+                    <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_06.jpg ">
+                    </div>
+    
+                </div>
+                <div class="col col-sm6 " style="padding: 20px;">
+                    <div style="width: 250px;height: 250px;overflow:hidden;margin:0 auto; border: rgb(238, 234, 234) 1px solid;">
+                        <img style="object-fit:cover;height: 100%;transform:scale(1.2)" src="./照片/p_07.jpg ">
+                    </div>
+    
+                </div> -->
+        <!-- transform:translate(-65px) ;transform:translate(-85px) scale(0.8)-->
+
+
+        <!-- <div class="col" style="background-color: gainsboro;height: 200px;"></div>
+            <div class="col" style="background-color: gainsboro;height: 200px;"></div>
+             -->
+
+
+        </div>
+        <!-- 暫時結束 -->
     </main>
+    <!-- 內容結束 -->
 
     <footer>
         <div class="footer_group">
@@ -301,17 +389,17 @@
         </div>
         <div class="footer_end">
             <p>© 2020 臺灣愷迪研發科技股份有限公司版權所有。 | Designed by KD.<br>
-                </p>
-                <div>
-                    <span id="busuanzi_container_site_pv">
-                        本站總訪問量<span id="busuanzi_value_site_pv"></span>次
-                    </span>
-                    
-                    
-                    <span id="busuanzi_container_site_uv">
-                      本站訪客數<span id="busuanzi_value_site_uv"></span>人次
-                    </span>
-                </div>
+            </p>
+            <div>
+                <span id="busuanzi_container_site_pv">
+                    本站總訪問量<span id="busuanzi_value_site_pv"></span>次
+                </span>
+
+
+                <span id="busuanzi_container_site_uv">
+                    本站訪客數<span id="busuanzi_value_site_uv"></span>人次
+                </span>
+            </div>
         </div>
 
     </footer>
